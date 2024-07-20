@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 html {
     scroll-behavior: smooth;
@@ -7,8 +7,10 @@ html {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
 }
 
 a {
@@ -53,24 +55,183 @@ nav button:hover {
 
 /* A partir de aquí es el css del body */
 
-.container-body {
-    width: 200vh;
-    height: 100vh;
-    background-image: url(/assets/piano-in-construction.jpg);
+video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.text-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+    text-align: center;
+}
+
+.text-video h1 {
+    font-weight: 800;
+    font-size: 6rem;
+    line-height: 1;
+    color: #fff;
+    -webkit-text-stroke: 1px black;
+    letter-spacing: 3px;
+}
+
+.text-video span {
+    font-weight: 800;
+    font-size: 8rem;
+    display: block;
+}
+
+.description {
+    position: absolute;
+    bottom: 10%;
+    width: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    opacity: 0.7;
+    padding: 1.5rem;
+}
+
+.description p {
+    text-align: justify;
+    max-width: 42rem;
+    margin-inline: auto;
+    line-height: 1.5;
+}
+
+.container-instrument {
+    padding: 80px 85px 0;
+}
+
+.container-instrument h3, .container-team h3 {
+    font-size: 42px;
+    margin-top: 15px;
+}
+
+.container-instrument .instrument-items {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.container-instrument .instrument-items .piano {
+    background-image: url(/assets/piano-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
+}
+.container-instrument .instrument-items .guitar {
+    background-image: url(/assets/guitar-card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container-instrument .instrument-items .drums {
+    background-image: url(/assets/drums-card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.container-instrument .instrument-items .bass {
+    background-image: url(/assets/bass-card.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container-instrument .instrument-items .item {
     display: flex;
     flex-direction: column;
-}
-
-.container-body .in-construction-guitar h1, .container-body .in-construction-guitar p, .container-body .in-construction-bass h1, .container-body .in-construction-bass p, .container-body .in-construction-drums h1, .container-body .in-construction-drums p {
+    justify-content: baseline;
+    align-items: center;
     color: white;
-    padding-left: 50px;
-    margin-top: 20px;
+    width: 25%;
+    height: 30px;
+    border-radius: 10px;
+    padding: 32px;
+    cursor: pointer;
 }
 
-.container-body .in-construction-piano h1 {
-    margin-top: 180px;
+.container-instrument .instrument-items .item {
+    transition: opacity 0.3s ease;
+}
+
+.container-instrument .instrument-items .item:hover {
+    opacity: 0.5;
+}
+
+.container-instrument .instrument-items .item h3 {
+    font-size: 36px;
+    font-weight: 800;
+    -webkit-text-stroke: 1px black;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.container-team {
+    padding: 90px 85px;
+}
+
+.container-team .team-items {
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+}
+
+.container-team .team-items .top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.container-team .team-items .down {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 20px;
+    padding-top: 40px;
+}
+
+.container-team .team-items img {
+    width: 200px;
+    height: 200px;
+    border-radius: 30px;
+}
+
+.container-team .team-items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%;
+    background-color: #fff;
+    border-radius: 10px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+    box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+    padding-top: 20px;
+}
+
+.container-team .team-items .info a {
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    text-decoration-color: #5e3bee;
+}
+
+.container-team .team-items .info a i {
+    margin-left: 2px;
+    font-size: 16px;
+    font-size: 34px;
+    padding: 10px 0 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 /* A partir de aquí es el css del footer */
@@ -130,4 +291,115 @@ footer .bottom p {
 footer .bottom .links a {
     font-size: 12px;
     margin-left: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .text-video h1 {
+        font-size: 5rem;
+    }
+
+    .text-video span {
+        font-size: 7rem;
+    }
+
+    .container-instrument .instrument-items {
+        gap: 10px;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .container-instrument .instrument-items .item {
+        width: 49%;
+    }
+
+    .container-instrument h3, .container-team h3 {
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .text-video h1 {
+        font-size: 4rem;
+    }
+
+    .text-video span {
+        font-size: 6rem;
+    }
+
+    .container-instrument {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-instrument .instrument-items {
+        justify-content: center;
+    }
+
+    .container-team .team-items {
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-team .team-items .item {
+        width: 48%;
+    }
+
+    footer .top ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav.open .logo {
+        display: none;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+
+    nav button#menuButton {
+        display: flex;
+    }
+
+    .text-video h1 {
+        font-size: 3rem;
+    }
+
+    .text-video span {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .text-video h1 {
+        font-size: 2rem;
+    }
+
+    .text-video span {
+        font-size: 3rem;
+    }
 }
