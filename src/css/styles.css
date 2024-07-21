@@ -356,6 +356,11 @@ footer .bottom .links a {
     .about .right p {
         font-size: 14px;
     }
+
+    .container-team .team-items img {
+        width: 140px;
+        height: 140px;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -409,6 +414,11 @@ footer .bottom .links a {
 
     .container-team .team-items .item {
         width: 48%;
+    }
+
+    .container-team .team-items img {
+        width: 140px;
+        height: 140px;
     }
 
     footer .top ul {
