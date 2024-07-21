@@ -7,6 +7,7 @@ html {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -61,6 +62,10 @@ video {
     object-fit: cover;
 }
 
+.container-video {
+    position: relative;
+}
+
 .text-video {
     position: absolute;
     top: 50%;
@@ -86,7 +91,7 @@ video {
 
 .description {
     position: absolute;
-    bottom: 10%;
+    bottom: 20%;
     width: 50%;
     left: 0;
     right: 0;
@@ -110,35 +115,35 @@ video {
 }
 
 .container-instrument h3, .container-team h3 {
-    font-size: 42px;
-    margin-top: 15px;
+    font-size: 40px;
 }
 
 .container-instrument .instrument-items {
     display: flex;
+    flex-direction: row;
     margin-top: 70px;
     gap: 30px;
 }
 
-.container-instrument .instrument-items .piano {
+.container-instrument .instrument-items .item-piano {
     background-image: url(/assets/piano-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.container-instrument .instrument-items .guitar {
+.container-instrument .instrument-items .item-guitar {
     background-image: url(/assets/guitar-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.container-instrument .instrument-items .drums {
+.container-instrument .instrument-items .item-drums {
     background-image: url(/assets/drums-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
-.container-instrument .instrument-items .bass {
+.container-instrument .instrument-items .item-bass {
     background-image: url(/assets/bass-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
@@ -147,9 +152,9 @@ video {
 
 .container-instrument .instrument-items .item {
     display: flex;
-    flex-direction: column;
-    justify-content: baseline;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     color: white;
     width: 25%;
     height: 30px;
@@ -166,12 +171,37 @@ video {
     opacity: 0.5;
 }
 
-.container-instrument .instrument-items .item h3 {
-    font-size: 36px;
+.container-instrument .instrument-items .item h4 {
+    font-size: 30px;
     font-weight: 800;
     -webkit-text-stroke: 1px black;
     color: #fff;
     letter-spacing: 1px;
+}
+
+.about {
+    padding: 110px;
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.about .left {
+    background-color: #deebee;
+    border-radius: 10px 10px 0 0;
+}
+
+.about .left img {
+    width: 440px;
+}
+
+.about .right {
+    font-size: 16px;
+    margin-top: 30px;
+}
+
+.about .right h3 {
+    font-size: 36px;
 }
 
 .container-team {
@@ -180,11 +210,12 @@ video {
 
 .container-team .team-items {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 70px;
+    gap: 20px;
 }
 
-.container-team .team-items .top {
+/* .container-team .team-items .top {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -197,12 +228,14 @@ video {
     justify-content: space-around;
     gap: 20px;
     padding-top: 40px;
-}
+} */
 
 .container-team .team-items img {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     border-radius: 30px;
+    padding-bottom: 10px;
+    object-fit: cover;
 }
 
 .container-team .team-items .item {
@@ -300,7 +333,7 @@ footer .bottom .links a {
     }
 
     .text-video span {
-        font-size: 7rem;
+        font-size: 6rem;
     }
 
     .container-instrument .instrument-items {
@@ -315,6 +348,18 @@ footer .bottom .links a {
 
     .container-instrument h3, .container-team h3 {
         font-size: 32px;
+    }
+
+    .about .left img {
+        width: 300px;   
+    }
+    .about .right p {
+        font-size: 14px;
+    }
+
+    .container-team .team-items img {
+        width: 140px;
+        height: 140px;
     }
 }
 
@@ -332,11 +377,15 @@ footer .bottom .links a {
     }
 
     .text-video h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .text-video span {
-        font-size: 6rem;
+        font-size: 4rem;
+    }
+
+    .container-video .description {
+        display: none;
     }
 
     .container-instrument {
@@ -348,6 +397,15 @@ footer .bottom .links a {
         justify-content: center;
     }
 
+    .container-instrument .instrument-items .item h4 {
+        font-size: 28px;
+    }
+
+    .about {
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .container-team .team-items {
         gap: 22px;
         flex-wrap: wrap;
@@ -356,6 +414,11 @@ footer .bottom .links a {
 
     .container-team .team-items .item {
         width: 48%;
+    }
+
+    .container-team .team-items img {
+        width: 140px;
+        height: 140px;
     }
 
     footer .top ul {
@@ -390,16 +453,41 @@ footer .bottom .links a {
     }
 
     .text-video span {
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+
+    .container-video .description {
+        display: none;
+    }
+
+    .container-instrument .instrument-items .item h4 {
+        font-size: 26px;
+    }
+
+    .about {
+        padding: 85px 42px;
     }
 }
 
 @media screen and (max-width: 576px) {
+    .container-video {
+        display: flex;
+        flex-direction: column;
+    }
+
     .text-video h1 {
         font-size: 2rem;
     }
 
     .text-video span {
         font-size: 3rem;
+    }
+    
+    .container-video .description {
+        display: none;
+    }
+
+    .container-instrument .instrument-items .item h4 {
+        font-size: 24px;
     }
 }
