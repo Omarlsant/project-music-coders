@@ -57,6 +57,10 @@ nav button:hover {
     color: #fff;
 }
 
+nav a {
+    font-size: 13px;
+}
+
 /* A partir de aquí es el css del body */
 
 video {
