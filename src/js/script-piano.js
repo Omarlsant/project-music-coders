@@ -10,10 +10,11 @@ let playTune = (key) => {
     audio.play(); 
     
     let clickedkey = document.querySelector(`[data-key="${key}"]`);
-    clickedkey.classList.add("active");
-    setTimeout(() => {
-        clickedkey.classList.remove("active");
-    }, 150);
+    clickedkey.addEventListener('mousedown', pressedkey);
+    // clickedkey.classList.add("active");
+    // setTimeout(() => {
+    //     clickedkey.classList.remove("active");
+    // }, 350);
 };  
 
 pianokeys.forEach(key => {
@@ -34,7 +35,7 @@ let pressedkey = (e) => {
 }
 
 volumeSlider.addEventListener('input', handleVolume);
-keysCheckbox.addEventListener('click', showHideKeys)
+keysCheckbox.addEventListener('click', showHideKeys);
 document.addEventListener('keydown', pressedkey);
 
 
