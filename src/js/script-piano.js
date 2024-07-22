@@ -40,7 +40,6 @@ function playSound(keyCode) {
     return null;
 };
 
-
 keys.forEach(key => {
     key.addEventListener('mousedown', () => playSound(key.dataset.key));
 });

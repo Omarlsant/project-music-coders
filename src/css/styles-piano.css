@@ -207,6 +207,11 @@ main {
     background: linear-gradient(to bottom, #000, #434343);
 }
 
+.piano-keys .black.active {
+    box-shadow: inset -5px -10px -10px rgba(255,255,255,2.5);
+    background: linear-gradient(to bottom, #000, #434343);
+}
+
 .piano-keys .white {
     height: 14.37em;
     width: 4.37em;
@@ -216,6 +221,11 @@ main {
 }
 
 .piano-keys .white:active {
+    box-shadow: inset -5px 5px 20px rgba(0,0,0,0.9);
+    background: linear-gradient(to bottom, #fff 0%, #eee 100%);
+}
+
+.piano-keys .white.active {
     box-shadow: inset -5px 5px 20px rgba(0,0,0,0.9);
     background: linear-gradient(to bottom, #fff 0%, #eee 100%);
 }
