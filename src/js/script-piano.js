@@ -57,5 +57,12 @@ let showHideKeys = () => {
     keys.forEach(key => key.classList.toggle('hide'));
 }
 
+function openMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('open');
+}
+
 document.addEventListener('keydown', pressedkey);
 keysCheckbox.addEventListener('click', showHideKeys);
+
+

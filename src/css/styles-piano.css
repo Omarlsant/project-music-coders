@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 html {
     scroll-behavior: smooth;
 }
@@ -5,6 +7,10 @@ html {
 * {
     margin: 0;
     padding: 0;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
     box-sizing: border-box;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
@@ -13,6 +19,10 @@ a {
     text-decoration: none;
     color: #1c1e53;
     transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5e3bee !important;
 }
 
 li {
@@ -49,86 +59,11 @@ nav button:hover {
     color: #fff;
 }
 
-/* A partir de aquí es el css del body */
-
-.container-body {
-    width: 200vh;
-    height: 100vh;
-    background-image: url(/assets/piano-in-construction.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
+nav a {
+    font-size: 13px;
 }
 
-.container-body .in-construction-guitar h1, .container-body .in-construction-guitar p, .container-body .in-construction-bass h1, .container-body .in-construction-bass p, .container-body .in-construction-drums h1, .container-body .in-construction-drums p {
-    color: white;
-    padding-left: 50px;
-    margin-top: 20px;
-}
-
-.container-body .in-construction-piano h1 {
-    margin-top: 180px;
-}
-
-/* A partir de aquí es el css del footer */
-
-nav .logo, footer .logo {
-    display: flex;
-    align-items: center;
-}
-
-nav .logo a, footer .logo a {
-    margin-left: 8px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-nav .logo img, footer .logo img {
-    width: 95px;
-    height: 80px;
-}
-
-nav ul, footer .top ul {
-    display: flex;
-    gap: 40px;
-}
-
-footer {
-    background-color: #deebee;
-    padding: 85px;
-    display: flex;
-    flex-direction: column;
-}
-
-footer .top, footer .bottom {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-footer .top .social-link {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    font-size: 22px;
-}
-
-footer .separator {
-    width: 100%;
-    height: 1px;
-    background-color: #282938;
-    margin: 30px 0 20px;
-}
-
-footer .bottom p {
-    font-size: 12px;
-}
-
-footer .bottom .links a {
-    font-size: 12px;
-    margin-left: 14px;
-}
+/* A partir de aquí es el css del main */
 
 main {
     display: flex;
@@ -354,3 +289,258 @@ main {
         margin-top: 0;
     }
 }
+
+
+/* A partir de aquí es el css del footer */
+
+nav .logo, footer .logo {
+    display: flex;
+    align-items: center;
+}
+
+nav .logo a, footer .logo a {
+    margin-left: 8px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+nav .logo img, footer .logo img {
+    width: 95px;
+    height: 80px;
+}
+
+nav ul, footer .top ul {
+    display: flex;
+    gap: 40px;
+}
+
+footer {
+    background-color: #deebee;
+    padding: 50px 80px 60px 80px;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .top, footer .bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer .top .social-link {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 28px;
+}
+
+footer .separator {
+    width: 100%;
+    height: 1px;
+    background-color: #282938;
+    margin: 30px 0 20px;
+}
+
+footer .bottom p {
+    font-size: 12px;
+}
+
+footer .bottom .links a {
+    font-size: 12px;
+    margin-left: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+
+    .text-video h1 {
+        font-size: 5rem;
+    }
+
+    .text-video span {
+        font-size: 6rem;
+    }
+
+    .container-instrument .instrument-items {
+        gap: 10px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .container-instrument .instrument-items .item {
+        width: 49%;
+    }
+
+    .container-instrument h3, .container-team h3, .container-about h3 {
+        font-size: 32px;
+    }
+
+    .container-about {
+        padding: 85px 80px 0 80px;
+        justify-content: center;
+    }
+
+    .container-about .left img {
+        width: 300px;   
+    }
+
+    .container-about .right p {
+        font-size: 14px;
+    }
+
+    .container-team .team-items img {
+        width: 140px;
+        height: 140px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    nav button {
+        display: none;
+    }
+
+    nav ul {
+        gap: 20px;
+    }
+
+    nav ul li a {
+        font-size: 15px;
+    }
+
+    .text-video h1 {
+        font-size: 3rem;
+    }
+
+    .text-video span {
+        font-size: 4rem;
+    }
+
+    .container-instrument h3, .container-team h3, .container-about h3 {
+        font-size: 26px;
+    }
+
+    .container-video .description {
+        display: none;
+    }
+
+    .container-instrument {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-instrument .instrument-items {
+        justify-content: center;
+    }
+
+    .container-instrument .instrument-items .item h4 {
+        font-size: 28px;
+    }
+
+    .container-about {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .container-team .team-items {
+        gap: 22px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .container-team .team-items .item {
+        width: 48%;
+    }
+
+    .container-team .team-items img {
+        width: 140px;
+        height: 140px;
+    }
+
+    footer .top ul {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        justify-content: space-between;
+        padding: 0 42px;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+    nav.open .logo {
+        display: none;
+    }
+
+    nav.open ul {
+        display: flex;
+    }
+
+    nav button#menuButton {
+        display: flex;
+    }
+
+    .text-video h1 {
+        font-size: 3rem;
+    }
+
+    .text-video span {
+        font-size: 4rem;
+    }
+
+    .container-video .description {
+        display: none;
+    }
+
+    .container-instrument h3, .container-team h3, .container-about h3 {
+        font-size: 24px;
+    }
+
+    .container-instrument .instrument-items .item h4 {
+        font-size: 26px;
+    }
+
+    .container-about {
+        padding: 60px 85px 0 85px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container-video {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .text-video h1 {
+        font-size: 2rem;
+    }
+
+    .text-video span {
+        font-size: 3rem;
+    }
+    
+    .container-video .description {
+        display: none;
+    }
+
+    .container-instrument .instrument-items .item h4 {
+        font-size: 24px;
+    }
+
+    .container-about {
+        padding: 60px 85px 0 85px;
+    }
+
+    .container-about .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-team {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
