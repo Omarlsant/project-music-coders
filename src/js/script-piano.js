@@ -1,44 +1,61 @@
-let pianokeys = document.querySelectorAll('.piano-keys .key'),
-volumeSlider = document.querySelector('.volume-slider input'),
+const keys = document.querySelectorAll('.key');
+const volumeControl = document.querySelector('.volume-slider input');
+let volume = volumeControl.value / 1,
 keysCheckbox = document.querySelector('.keys-checkbox input');
 
-let allkeys = [],
-audio = new Audio("/assets/sound/a.mp3");
+const sounds = {
+    'a': '/assets/sound/a.mp3',
+    'b': '/assets/sound/b.mp3',
+    'c': '/assets/sound/c.mp3',
+    'd': '/assets/sound/d.mp3',
+    'e': '/assets/sound/e.mp3',
+    'f': '/assets/sound/f.mp3',
+    'g': '/assets/sound/g.mp3',
+    'h': '/assets/sound/h.mp3',
+    'i': '/assets/sound/i.mp3',
+    'j': '/assets/sound/j.mp3',
+    'k': '/assets/sound/k.mp3',
+    'l': '/assets/sound/l.mp3',
+    'm': '/assets/sound/m.mp3',
+    'n': '/assets/sound/n.mp3',
+    'ñ': '/assets/sound/ñ.mp3',
+    'o': '/assets/sound/o.mp3',
+    's': '/assets/sound/s.mp3',
+    't': '/assets/sound/t.mp3',
+    'u': '/assets/sound/u.mp3',
+    'v': '/assets/sound/v.mp3',
+    'w': '/assets/sound/w.mp3',
+    'x': '/assets/sound/x.mp3',
+    'y': '/assets/sound/y.mp3',
+    'z': '/assets/sound/z.mp3'
+};
 
-let playTune = (key) => {
-    audio.src = `/assets/sound/${key}.mp3`;
-    audio.play(); 
-    
-    let clickedkey = document.querySelector(`[data-key="${key}"]`);
-    clickedkey.addEventListener('mousedown', pressedkey);
-    // clickedkey.classList.add("active");
-    // setTimeout(() => {
-    //     clickedkey.classList.remove("active");
-    // }, 350);
-};  
+function playSound(keyCode) {
+    if (sounds[keyCode]) {
+        const audio = new Audio(sounds[keyCode]);
+        audio.volume = volume;
+        audio.play();
+        return audio;
+    }
+    return null;
+};
 
-pianokeys.forEach(key => {
-    allkeys.push(key.dataset.key);
-    key.addEventListener('mousedown',() => playTune(key.dataset.key));
+
+keys.forEach(key => {
+    key.addEventListener('mousedown', () => playSound(key.dataset.key));
 });
 
-let handleVolume = (e) => {
-    audio.volume = e.target.value;
+volumeControl.addEventListener('input', (e) => {
+    volume = e.target.value / 1;
+});
+
+const pressedkey = (e) => {
+    playSound(e.key);
 }
 
 let showHideKeys = () => {
-    pianokeys.forEach(key => key.classList.toggle('hide'));
+    keys.forEach(key => key.classList.toggle('hide'));
 }
 
-let pressedkey = (e) => {
-    if(allkeys.includes(e.key)) playTune(e.key);
-}
-
-volumeSlider.addEventListener('input', handleVolume);
-keysCheckbox.addEventListener('click', showHideKeys);
 document.addEventListener('keydown', pressedkey);
-
-
-
-
-
+keysCheckbox.addEventListener('click', showHideKeys);
