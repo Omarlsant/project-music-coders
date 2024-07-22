@@ -191,7 +191,11 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 1200px) {
-}
+  .teclado {
+    display: flex;
+    justify-content: center;
+  }
+  
 
 @media screen and (max-width: 992px) {
   .wrapper {
@@ -209,10 +213,7 @@ footer .bottom .links a {
   .piano {
     margin-top: 20px;
   }
-  .piano .key:nth-child(9),
-  .piano .key:nth-child(10) {
-    display: none;
-  }
+
   .piano .black-key {
     height: 70px;
     width: 30px;
@@ -239,6 +240,7 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 576px) {
+ 
 }
 
 /* @media screen and (max-width: 851px) {
