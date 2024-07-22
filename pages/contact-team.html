@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/styles-contact.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Music Coders - Contacto</title>
 </head>
@@ -26,6 +26,41 @@
         </nav>
     </header>
     <main>
+        <div class="container-contacto">
+            <div class="contacto">
+                <img src="/assets/contact.jpg" alt="">
+                <div class="titulo">Contacto</div>
+            </div>
+        </div>
+        
+        </section>
+        <div class="formularioContacto">
+            <form id="contactForm" action="#" autocomplete="off" onsubmit="return validarFormulario()">
+                <input 
+                type="text" 
+                name="nombre" 
+                placeholder="Tu Nombre" 
+                class="campo" 
+                required
+                >
+                <input 
+                type="email" 
+                name="email" 
+                placeholder="Tu Email" 
+                class="campo" 
+                required
+                >
+                <textarea 
+                name="mensaje" 
+                placeholder="Tu Mensaje..." 
+                class="campo" 
+                required></textarea>
+                <button class="btn">
+                    <span class="btn-text-one">Enviar</span>
+                    <span class="btn-text-two">Gracias por confiar en nosotros</span>
+                </button>
+            </form>
+        </div>
         
     </main>
     <footer>
