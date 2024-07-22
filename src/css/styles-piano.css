@@ -35,12 +35,10 @@ body {
 
 .piano .white-key {
   box-shadow: 5px 5px 10px #fff inset, -5px -5px 10px #b2b2b2 inset;
-  cursor: url("img/piano (1).png"), auto;
 }
 
 .piano .black-key {
   box-shadow: 5px 5px 10px #000000 inset, -5px -5px 10px #333 inset;
-  cursor: url("assets/piano (2)-icono-cursor-piano.png"), auto;
 }
 
 .piano {
@@ -79,7 +77,7 @@ body {
   width: 40px;
   margin-top: 1px;
   border-radius: 10px;
-  cursor: url("img/piano (1).png"), auto;
+  cursor: url("/assets/piano (2)-icono-cursor-piano.png"), auto;
 }
 @media screen and (max-width: 851px) {
   .wrapper {
