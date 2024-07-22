@@ -7,7 +7,6 @@ html {
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -18,6 +17,10 @@ a {
     text-decoration: none;
     color: #1c1e53;
     transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #5e3bee !important;
 }
 
 li {
@@ -114,7 +117,7 @@ video {
     padding: 80px 85px 0;
 }
 
-.container-instrument h3, .container-team h3 {
+.container-instrument h3, .container-team h3, .about h3 {
     font-size: 40px;
 }
 
@@ -164,7 +167,7 @@ video {
 }
 
 .container-instrument .instrument-items .item {
-    transition: opacity 0.3s ease;
+    transition: ease-in-out 0.5s;
 }
 
 .container-instrument .instrument-items .item:hover {
@@ -179,56 +182,52 @@ video {
     letter-spacing: 1px;
 }
 
-.about {
-    padding: 110px;
-    display: flex;
-    align-items: center;
-    gap: 60px;
+.container-about {
+    padding: 85px 80px 0 80px;
 }
 
-.about .left {
-    background-color: #deebee;
+.container-about h3 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.container-about .about {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-about .left {
     border-radius: 10px 10px 0 0;
 }
 
-.about .left img {
+.container-about .left img {
     width: 440px;
 }
 
-.about .right {
-    font-size: 16px;
+.container-about .right {
     margin-top: 30px;
 }
 
-.about .right h3 {
-    font-size: 36px;
+.container-about .right p {
+    font-size: 16px;
+    text-align: justify;
 }
 
 .container-team {
-    padding: 90px 85px;
+    padding: 50px 80px 85px 80px;
+}
+
+.container-team h3 {
+    margin-bottom: 30px;
 }
 
 .container-team .team-items {
     display: flex;
     flex-direction: row;
-    margin-top: 70px;
     gap: 20px;
 }
-
-/* .container-team .team-items .top {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    gap: 20px;
-}
-
-.container-team .team-items .down {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    gap: 20px;
-    padding-top: 40px;
-} */
 
 .container-team .team-items img {
     width: 170px;
@@ -242,6 +241,7 @@ video {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     width: 20%;
     background-color: #fff;
     border-radius: 10px;
@@ -250,6 +250,18 @@ video {
     box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
     transition: all 0.3s ease;
     padding-top: 20px;
+}
+
+.container-team .team-items .item {
+    transition: ease-in-out 0.5s;
+}
+
+.container-team .team-items .item:hover {
+    opacity: 0.5;
+}
+
+.container-team .team-items .item .info h5 {
+    color: #5e3bee;
 }
 
 .container-team .team-items .info a {
@@ -292,7 +304,7 @@ nav ul, footer .top ul {
 
 footer {
     background-color: #deebee;
-    padding: 85px;
+    padding: 50px 80px 60px 80px;
     display: flex;
     flex-direction: column;
 }
@@ -306,8 +318,8 @@ footer .top, footer .bottom {
 footer .top .social-link {
     display: flex;
     align-items: center;
-    gap: 10px;
-    font-size: 22px;
+    gap: 20px;
+    font-size: 28px;
 }
 
 footer .separator {
@@ -338,7 +350,7 @@ footer .bottom .links a {
 
     .container-instrument .instrument-items {
         gap: 10px;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
     }
 
@@ -350,10 +362,16 @@ footer .bottom .links a {
         font-size: 32px;
     }
 
-    .about .left img {
+    .container-about {
+        padding: 85px 80px 0 80px;
+        justify-content: center;
+    }
+
+    .container-about .left img {
         width: 300px;   
     }
-    .about .right p {
+
+    .container-about .right p {
         font-size: 14px;
     }
 
@@ -401,7 +419,7 @@ footer .bottom .links a {
         font-size: 28px;
     }
 
-    .about {
+    .container-about {
         flex-direction: column;
         justify-content: center;
     }
@@ -464,8 +482,8 @@ footer .bottom .links a {
         font-size: 26px;
     }
 
-    .about {
-        padding: 85px 42px;
+    .container-about {
+        padding: 60px 85px 0 85px;
     }
 }
 
@@ -489,5 +507,19 @@ footer .bottom .links a {
 
     .container-instrument .instrument-items .item h4 {
         font-size: 24px;
+    }
+
+    .container-about {
+        padding: 60px 85px 0 85px;
+    }
+
+    .container-about .about {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-team {
+        display: flex;
+        flex-direction: column;
     }
 }
