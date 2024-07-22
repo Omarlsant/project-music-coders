@@ -133,25 +133,25 @@ video {
 }
 
 .container-instrument .instrument-items .item-piano {
-    background-image: url(/assets/piano-card.jpg);
+    background-image: url(/assets/instrument-cards/piano-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container-instrument .instrument-items .item-guitar {
-    background-image: url(/assets/guitar-card.jpg);
+    background-image: url(/assets/instrument-cards/guitar-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container-instrument .instrument-items .item-drums {
-    background-image: url(/assets/drums-card.jpg);
+    background-image: url(/assets/instrument-cards/drums-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
 .container-instrument .instrument-items .item-bass {
-    background-image: url(/assets/bass-card.jpg);
+    background-image: url(/assets/instrument-cards/bass-card.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
