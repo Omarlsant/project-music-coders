@@ -121,8 +121,8 @@ video {
     padding: 80px 85px 0;
 }
 
-.container-instrument h3, .container-team h3, .about h3 {
-    font-size: 40px;
+.container-instrument h3, .container-team h3, .container-about h3 {
+    font-size: 36px;
 }
 
 .container-instrument .instrument-items {
@@ -191,7 +191,6 @@ video {
 }
 
 .container-about h3 {
-    font-size: 32px;
     margin-bottom: 30px;
 }
 
@@ -362,7 +361,7 @@ footer .bottom .links a {
         width: 49%;
     }
 
-    .container-instrument h3, .container-team h3 {
+    .container-instrument h3, .container-team h3, .container-about h3 {
         font-size: 32px;
     }
 
@@ -404,6 +403,10 @@ footer .bottom .links a {
 
     .text-video span {
         font-size: 4rem;
+    }
+
+    .container-instrument h3, .container-team h3, .container-about h3 {
+        font-size: 26px;
     }
 
     .container-video .description {
@@ -480,6 +483,10 @@ footer .bottom .links a {
 
     .container-video .description {
         display: none;
+    }
+
+    .container-instrument h3, .container-team h3, .container-about h3 {
+        font-size: 24px;
     }
 
     .container-instrument .instrument-items .item h4 {
