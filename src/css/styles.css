@@ -61,6 +61,10 @@ nav a {
     font-size: 13px;
 }
 
+nav .logo a button .bx {
+    display: none;
+}
+
 /* A partir de aquí es el css del body */
 
 video {
