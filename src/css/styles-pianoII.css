@@ -99,7 +99,8 @@ main {
   cursor: pointer;
   user-select: none;
   position: relative;
-  cursor: url("/assets/piano(2)-icono-cursor-nota-musical.svg"), auto;
+  cursor: url("/assets/html-elements/piano\(2\)-icono-cursor-nota-musical.svg"),
+    auto;
 }
 
 .piano .black-key {
@@ -118,9 +119,9 @@ main {
   border: 1px solid #000;
   background: whitesmoke;
 }
-.boton-piano{
+.boton-piano {
   opacity: 0.8;
-  cursor: url("/assets/piano (2)-icono-cursor-piano.png"), auto;
+  cursor: url("/assets/html-elements/piano (2)-icono-cursor-piano.png"), auto;
   width: 7%;
 }
 /*
@@ -200,7 +201,7 @@ footer .bottom .links a {
     display: flex;
     justify-content: center;
   }
-  
+}
 
 @media screen and (max-width: 992px) {
   .wrapper {
@@ -245,7 +246,6 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 576px) {
- 
 }
 
 /* @media screen and (max-width: 851px) {
