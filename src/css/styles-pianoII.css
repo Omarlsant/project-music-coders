@@ -118,7 +118,12 @@ main {
   border: 1px solid #000;
   background: whitesmoke;
 }
-
+.boton-piano{
+  opacity: 0.8;
+  cursor: url("/assets/piano (2)-icono-cursor-piano.png"), auto;
+  width: 7%;
+}
+/*
 .button {
   background-color: #e62828;
   color: #ffffff;
@@ -126,7 +131,7 @@ main {
   margin-top: 1px;
   border-radius: 10px;
   cursor: url("/assets/piano (2)-icono-cursor-piano.png"), auto;
-}
+}*/
 
 nav .logo,
 footer .logo {
