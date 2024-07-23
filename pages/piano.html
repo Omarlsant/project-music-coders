@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/styles-piano.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Music Coders - Team members</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <a href="/index.html">
+            <img
+              src="/assets/html-elements/logo-music-coders.png"
+              alt="logo-mc"
+            />
+          </a>
+          <a href="#" target="_blank">Team 1 DOM</a>
+        </div>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+        </ul>
+        <a href="#conect"><button>Contact Team</button></a>
+        <button id="menuButton" onclick="openMenu()">
+          <i class="bx bx-menu"></i>
+        </button>
+      </nav>
+    </header>
+    <main>
+      <div class="piano-box">
+        <div class="header">
+          <a href="/pages/piano-2.html"
+            ><img
+              src="/assets/html-elements/piano_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png"
+              alt="home button"
+          /></a>
+          <h2>MUSIC CODERS</h2>
+          <div class="column volume-slider">
+            <span>Volume</span
+            ><input
+              type="range"
+              min="0"
+              max="1"
+              value="0.5"
+              step="any"
+              name=""
+              id=""
+            />
+          </div>
+          <div class="column keys-checkbox">
+            <span>Show Keys</span><input type="checkbox" checked />
+          </div>
+        </div>
+        <ul class="piano-keys">
+          <li class="white key" data-key="a"><span>A</span></li>
+          <li class="black key" data-key="w"><span>W</span></li>
+          <li class="white key" data-key="s"><span>S</span></li>
+          <li class="black key" data-key="e"><span>E</span></li>
+          <li class="white key" data-key="d"><span>D</span></li>
+          <li class="white key" data-key="f"><span>F</span></li>
+          <li class="black key" data-key="t"><span>T</span></li>
+          <li class="white key" data-key="g"><span>G</span></li>
+          <li class="black key" data-key="y"><span>Y</span></li>
+          <li class="white key" data-key="h"><span>H</span></li>
+          <li class="black key" data-key="u"><span>U</span></li>
+          <li class="white key" data-key="j"><span>J</span></li>
+          <li class="white key" data-key="k"><span>K</span></li>
+          <li class="black key" data-key="i"><span>I</span></li>
+          <li class="white key" data-key="l"><span>L</span></li>
+          <li class="black key" data-key="o"><span>O</span></li>
+          <li class="white key" data-key="ñ"><span>Ñ</span></li>
+          <li class="white key" data-key="z"><span>Z</span></li>
+          <li class="black key" data-key="x"><span>X</span></li>
+          <li class="white key" data-key="c"><span>C</span></li>
+          <li class="black key" data-key="v"><span>V</span></li>
+          <li class="white key" data-key="b"><span>B</span></li>
+          <li class="black key" data-key="n"><span>N</span></li>
+          <li class="white key" data-key="m"><span>M</span></li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <div class="top">
+        <div class="logo">
+          <img
+            src="/assets/html-elements/logo-music-coders.png"
+            alt="logo-mc"
+          />
+          <a href="#">Team 1 DOM</a>
+        </div>
+        <ul>
+          <li><a href="#main">Home</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">About us</a></li>
+          <li><a href="#portfolio">Projects</a></li>
+        </ul>
+        <div class="social-link">
+          <a href="#"><i class="bx bxl-linkedin-square" target="_blank"></i></a>
+          <a href="#"><i class="bx bxl-github" target="_blank"></i></a>
+          <a href="#"><i class="bx bxl-discord-alt" target="_blank"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <div class="bottom">
+        <p>Made with ❤️ By Team D-O-M | all rights reserved</p>
+        <div class="links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Cookies Settings</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/src/js/piano.js"></script>
+  </body>
+</html>
