@@ -67,6 +67,10 @@ nav .logo a button .bx {
     display: none;
 }
 
+#menuButton {
+    display: none;
+}
+
 /* A partir de aquí es el css del body */
 
 video {
@@ -262,11 +266,11 @@ video {
 }
 
 .container-team .team-items .item {
-    transition: ease-in-out 0.5s;
+    transition: opacity 0.3s;
 }
 
 .container-team .team-items .item:hover {
-    opacity: 0.5;
+    opacity: 0.3; 
 }
 
 .container-team .team-items .item .info h5 {
