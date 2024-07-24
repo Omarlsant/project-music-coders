@@ -10,7 +10,8 @@ html {
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  font-family: "Oxygen", sans-serif;
 }
 
 a {
@@ -74,12 +75,10 @@ main {
   border-radius: 20px;
   background: rgb(210, 38, 48);
 }
-/* distribucion lineal del encabezado  opcional, solo activar quitando esta.
-    .wrapper .encabezado {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }*/
+
+#menuButton {
+  display: none;
+}
 
 .piano .white-key {
   box-shadow: 5px 5px 10px #fff inset, -5px -5px 10px #b2b2b2 inset;
@@ -124,15 +123,6 @@ main {
   cursor: url("/assets/html-elements/piano (2)-icono-cursor-piano.png"), auto;
   width: 7%;
 }
-/*
-.button {
-  background-color: #e62828;
-  color: #ffffff;
-  width: 40px;
-  margin-top: 1px;
-  border-radius: 10px;
-  cursor: url("/assets/piano (2)-icono-cursor-piano.png"), auto;
-}*/
 
 nav .logo,
 footer .logo {
