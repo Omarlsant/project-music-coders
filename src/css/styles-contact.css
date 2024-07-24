@@ -49,6 +49,10 @@ nav button:hover {
     color: #fff;
 }
 
+#menuButton {
+    display: none;
+  }
+
 /* A partir de aquí es el css del body */
 
 .container-body {
@@ -91,6 +95,7 @@ nav ul, footer .top ul {
     display: flex;
     gap: 40px;
 }
+
 
 .container-contacto .contacto img {
     height: 700px;
@@ -202,6 +207,10 @@ footer {
     padding: 85px;
     display: flex;
     flex-direction: column;
+}
+
+main .datoscontacto2 {
+    padding-right: 30px;
 }
 
 footer .top, footer .bottom {
