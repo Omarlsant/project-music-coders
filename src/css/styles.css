@@ -127,6 +127,17 @@ video {
     line-height: 1.5;
 }
 
+.in-construction-text {
+    margin-left: 2em;
+    margin-top: 2em;
+}
+
+.in-construction img {
+    display: flex;
+    justify-content: center;
+    margin: 2em auto;
+    box-shadow: 14px 14px 20px 0 rgba(20, 20, 20, 0.3);
+}
 .container-instrument {
     padding: 80px 85px 0;
 }
@@ -459,6 +470,18 @@ footer .bottom .links a {
     footer .top ul {
         display: none;
     }
+
+    .in-construction img {
+        width: 30em;
+    }
+
+    .in-construction h1 {
+        font-size: 1em;
+    }
+
+    .in-construction p {
+        font-size: 0.8em;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -506,6 +529,10 @@ footer .bottom .links a {
     .container-about {
         padding: 60px 85px 0 85px;
     }
+
+    .in-construction img {
+        width: 25em;
+    }
 }
 
 @media screen and (max-width: 576px) {
@@ -542,5 +569,9 @@ footer .bottom .links a {
     .container-team {
         display: flex;
         flex-direction: column;
+    }
+
+    .in-construction img {
+        width: 20em;
     }
 }
