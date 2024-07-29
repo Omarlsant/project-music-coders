@@ -1,9 +1,3 @@
-function openMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('open');
-}
-console.log(document);
-
 const formulario = document.querySelector('#formulario');
 const nombre = document.querySelector('#nombre');
 const correo = document.querySelector('#correo');
@@ -19,56 +13,62 @@ function validar (evento) {
     // Evitar que se envie el formulario
     evento.preventDefault();
 
-    // Vacia los mensajesErrores antes de rellenarlo nuevamente
+    // Vaciar los mensajesErrores antes de rellenarlo nuevamente
     mensajesErrores = [];
 
     // VALIDACIONES
 
     // Nombre es obligatorio
-
     if (nombre.value.trim().length === 0) {
-        mensajesErrores = mensajesErrores.concat('Nombre es un campo obligatorio');
+        mensajesErrores.push('Nombre es un campo obligatorio');
+    } else if (!/^[a-zA-Z\s]+$/.test(nombre.value.trim())) {
+        mensajesErrores.push('Nombre no tiene carácteres válidos');
+    } else if (nombre.value.trim().length < 2) {
+        mensajesErrores.push('Nombre debe tener al menos 2 caracteres');
     }
     
-
-    // Nombre carácteres válidos
-
-    if (!/^[a-zA-Z0-9]*$/.exec(nombre.value.trim())) {
-        mensajesErrores = mensajesErrores.concat('Nombre no tiene carácteres válidos');
-    }
     // Validar el correo electrónico
     if (correo.value.trim().length === 0) {
-      mensajesErrores = mensajesErrores.concat('Correo es un campo obligatorio');}
-      else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo.value.trim())) {
-        mensajesErrores = mensajesErrores.concat('Correo no tiene un formato válido');
+        mensajesErrores.push('Correo es un campo obligatorio');
+    } else if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correo.value.trim())) {
+        mensajesErrores.push('Correo no tiene un formato válido');
     }
-    // Edad y telefono debe ser números
-
-    if (isNaN(edad.value.trim())) {
-        mensajesErrores = mensajesErrores.concat('La edad debe ser un número');
-        
+    
+    // Validar edad (debe ser un número)
+    if (edad.value.trim().length === 0) {
+        mensajesErrores.push('Edad es un campo obligatorio');
+    } else if (isNaN(edad.value.trim())) {
+        mensajesErrores.push('La edad debe ser un número');
     }
-    if (isNaN(telefono.value.trim())) {
-      mensajesErrores = mensajesErrores.concat('El telefono debe ser un número');
-  }
+    
+    // Validar teléfono (debe ser un número)
+    if (telefono.value.trim().length === 0) {
+        mensajesErrores.push('Teléfono es un campo obligatorio');
+    } else if (isNaN(telefono.value.trim())) {
+        mensajesErrores.push('El teléfono debe ser un número');
+    }
 
-    // Comprobamos que el mensaje tiene un mínimo de 10 carácteres
-
+    // Comprobar que el mensaje tiene un mínimo de 10 caracteres
     if (mensaje.value.trim().length < 10) {
-        mensajesErrores = mensajesErrores.concat('Mensaje demasiado corto');
+        mensajesErrores.push('Mensaje demasiado corto');
     }
 
     // ENVIAR O MOSTRAR MENSAJES
     if (mensajesErrores.length === 0) {
         // Enviamos el formulario si no hay errores
         formulario.submit();
+        Swal.fire({
+            title: "Mensaje enviado",
+            text: "Nos ponemos en contacto contigo",
+            icon: "success"
+          });
     } else {
-        // Muestro los errores
-        errores.textContent = '';
-        mensajesErrores.forEach(function (mensaje) {
-            const miLi = document.createElement('li');
-            miLi.textContent = mensaje;
-            errores.appendChild(miLi);
+        // Mostrar los errores en una alerta usando SweetAlert2
+        Swal.fire({
+            icon: 'error',
+            title: 'Errores de validación',
+            html: mensajesErrores.join('<br>'),
+            confirmButtonText: 'OK'
         });
     }
 }
