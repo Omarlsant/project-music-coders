@@ -1,60 +1,114 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <link rel="stylesheet" href="/src/css/styles-contact.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <title>Music Coders - Contacto</title>
+    <title>Proyecto Music Coders</title>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="/assets/html-elements/logo-music-coders.png" alt="logo-mc">
-                <a href="#" target="_blank">Music Coders</a>
-            </div>
+                <a href="/index.html">
+                  <img src="/assets/html-elements/logo-music-coders.png" alt="logo-mc">
+                </a>
+                  <a href="/index.html">Music Coders</a>
+              </div>
             <ul>
-                <li><a href="#containerInstruments">Instruments</a></li>
-                <li><a href="#about">About us</a></li>
-                <li><a href="#containerTeam">Team Members</a></li>
+                <li><a href="/index.html#containerInstruments">Instrumentos</a></li>
+                <li><a href="/index.html#about">Sobre nosotros</a></li>
+                <li><a href="/index.html#containerTeam">Miembros del equipo</a></li>
             </ul>
-            <a href="#conect"><button>Contact Team</button></a>
+            <a href="#formul"><button>Contáctanos</button></a>
             <button id="menuButton" onclick="openMenu()">
                 <i class='bx bx-menu'></i>
             </button>
         </nav>
     </header>
     <main>
-        
+        <div class="container-contacto">
+            <div class="contacto">
+                <img src="/assets/contact.jpg" alt="">
+                <div class="titulo">Contacto</div>
+            </div>
+        </div>
+        <div class="formularioContacto" id="formul">
+            <h1>Formulario de Contacto</h1>
+            <form id="formulario">
+                <p>
+                    <label>
+                        <input type="text" placeholder="Tu nombre" id="nombre" class="campo" value=""
+                            autocomplete="off">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input type="email" placeholder="Tu correo" id="correo" class="campo" value=""
+                            autocomplete="off">
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <input id="edad" type="text" placeholder="Tu edad" class="campo" value="" autocomplete="off">
+                    </label>
+                </p>
+                <p>
+                    <input id="telefono" type="text" class="campo" placeholder="Telefono contacto" value=""
+                        autocomplete="off">
+                </p>
+                <p>
+                    <label>
+                        <textarea cols="30" id="mensaje" class="campo" placeholder="¿En que podemos ayudarte?" name=""
+                            rows="10" autocomplete="off"></textarea>
+                    </label>
+                </p>
+                <p>
+                    <input type="submit" id="enviar" class="btn" value="Enviar" />
+                </p>
+            </form>
+            <ul id="errores"></ul>
+        </div>
+        <section class="contacto2">
+            <div class="imagencorreo"><i class='bx bxl-gmail'></i></div>
+            <div class="datoscontacto">
+                <h3>codermusic@gmail.com
+                    652349567
+                </h3>
+                <div class="datoscontacto2">
+                    <h3>Puedes ver mucho mas contenido y enterarte de las ultimas actualizaciones en nuestras redes
+                    </h3>
+                </div>
+        </section>
     </main>
     <footer>
-        <div class="top">
-            <div class="logo">
-                <img src="/assets/html-elements/logo-music-coders.png" alt="logo-mc">
-                <a href="#">Music Coders</a>
-            </div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#containerInstruments">Instruments</a></li>
-                <li><a href="#containerTeam">About us</a></li>
-            </ul>
-            <div class="social-link">
-                <a href="https://github.com/Omarlsant/project-music-coders"><i class='bx bxl-github' target="_blank"></i></a>
-                <a href="https://discord.com/channels/1037154655752421406/1037154656503210066"><i class='bx bxl-discord-alt' target="_blank"></i></a>
-            </div>
-        </div>
-        <div class="separator"></div>
-        <div class="bottom">
-            <p>Made with ❤️ By Team D-O-M | all rights reserved</p>
-            <div class="links">
-                <a href="#">Privacy Policy</a>
-                <a href="#">Terms of Service</a>
-                <a href="#">Cookies Settings</a>
-            </div>
-        </div>
-    </footer>
-    <script src="/src/js/script.js"></script>
+		<div class="top">
+			<div class="logo">
+				<img src="/assets/html-elements/logo-music-coders.png" alt="logo-mc" />
+				<a href="#">Music Coders</a>
+			</div>
+			<ul>
+				<li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html#containerInstruments">Instrumentos</a></li>
+                <li><a href="/index.html#about">Sobre nosotros</a></li>
+			</ul>
+			<div class="social-link">
+				<a href="https://github.com/Omarlsant/project-music-coders" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://discord.com/channels/1037154655752421406/1037154656503210066" target="_blank"><i class='bx bxl-discord-alt'></i></a>
+			</div>
+		</div>
+		<div class="separator"></div>
+		<div class="bottom">
+			<p>Hecho con ❤️ por el Team D-O-M | todos los derechos reservados</p>
+			<div class="links">
+				<a href="#">Políticas de privacidad</a>
+				<a href="#">Términos de servicio</a>
+				<a href="#">Configuración de cookies</a>
+			</div>
+		</div>
+	</footer>
+    <script src="/src/js/script-contact.js"></script>
 </body>
 
 </html>
