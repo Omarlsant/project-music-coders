@@ -28,6 +28,10 @@ li {
   list-style: none;
 }
 
+#menuButton {
+  display: none;
+}
+
 /* Aquí va lo del header */
 
 nav {
@@ -74,10 +78,6 @@ main {
   padding: 20px 40px;
   border-radius: 20px;
   background: rgb(210, 38, 48);
-}
-
-#menuButton {
-  display: none;
 }
 
 .piano .white-key {
@@ -186,57 +186,7 @@ footer .bottom .links a {
   margin-left: 14px;
 }
 
-@media screen and (max-width: 1200px) {
-  .teclado {
-    display: flex;
-    justify-content: center;
-  }
-}
 
-@media screen and (max-width: 992px) {
-  .wrapper {
-    padding: 25px;
-  }
-  .encabezado {
-    flex-direction: column;
-  }
-  .encabeza :where(h2, .column) {
-    margin-bottom: 13px;
-  }
-  .volume-slider .input {
-    max-width: 100px;
-  }
-  .piano {
-    margin-top: 20px;
-  }
-
-  .piano .black-key {
-    height: 70px;
-    width: 30px;
-    margin: 0 -20px 0 -20px;
-  }
-  .piano .white-key {
-    height: 100px;
-    width: 50px;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .piano .key:nth-child(13),
-  .piano .key:nth-child(14),
-  .piano .key:nth-child(15),
-  .piano .key:nth-child(16),
-  .piano .key:nth-child(17) {
-    display: none;
-  }
-  main .wrapper ul .piano {
-    padding: 80px 75px 80px 75px;
-    width: 100%;
-  }
-}
-
-@media screen and (max-width: 576px) {
-}
 
 /* @media screen and (max-width: 851px) {
   .wrapper {
@@ -340,4 +290,64 @@ input[type="range"] {
   justify-content: center;
   margin-top: 10px;
   opacity: 0.8;
+}
+
+@media screen and (max-width: 1200px) {
+  #menuButton {
+    display: none;
+  }
+
+  .teclado {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  #menuButton {
+    display: none;
+  }
+  
+  .wrapper {
+    padding: 25px;
+  }
+  .encabezado {
+    flex-direction: column;
+  }
+  .encabeza :where(h2, .column) {
+    margin-bottom: 13px;
+  }
+  .volume-slider .input {
+    max-width: 100px;
+  }
+  .piano {
+    margin-top: 20px;
+  }
+
+  .piano .black-key {
+    height: 70px;
+    width: 30px;
+    margin: 0 -20px 0 -20px;
+  }
+  .piano .white-key {
+    height: 100px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .piano .key:nth-child(13),
+  .piano .key:nth-child(14),
+  .piano .key:nth-child(15),
+  .piano .key:nth-child(16),
+  .piano .key:nth-child(17) {
+    display: none;
+  }
+  main .wrapper ul .piano {
+    padding: 80px 75px 80px 75px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 576px) {
 }

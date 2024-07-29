@@ -1,3 +1,10 @@
+function openMenu() {
+  const nav = document.querySelector('nav');
+  nav.classList.toggle('open');
+}
+
+console.log(document);
+
 const audioContext = new (window.AudioContext || window.webkitAudioContext)();
 
 // Crear el nodo de ganancia

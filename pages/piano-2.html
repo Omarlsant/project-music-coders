@@ -1,125 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/styles-pianoII.css" />
-    <link rel="icon" href="/assets/html-elements/logo-blanco.png" type="image/png">
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <title>Music Coders - Team members</title>
-  </head>
-  <body>
-    <header>
-      <nav>
-        <div class="logo">
-          <a href="/index.html"
-            ><img
-              src="/assets/html-elements/logo-music-coders.png"
-              alt="logo-mc"
-          /></a>
-          <a href="/index.html" target="_blank">Music Coders</a>
-        </div>
-        <ul>
-          <li><a href="#containerInstruments">Instruments</a></li>
-          <li><a href="#about">About the Team</a></li>
-          <li><a href="#containerTeam">Team Members</a></li>
-        </ul>
-        <a href="#conect"><button>Contact Team</button></a>
-        <button id="menuButton" onclick="openMenu()">
-          <i class="bx bx-menu"></i>
-        </button>
-      </nav>
-    </header>
-    <main>
-      <div class="teclado">
-        <section class="wrapper">
-          <div class="volume-slider">
-            <img
-              class="IconoVol"
-              src="/assets/html-elements/piano(2)-icono-volume-up.svg"
-              alt="vol"
-            />
-            <input
-              class="vs"
-              id="volumeSlider"
-              type="range"
-              min="0"
-              max="1"
-              value="0.5"
-              step="any"
-            />
-          </div>
-          <a href="piano.html">
-            <img
-              class="boton-piano"
-              src="/assets/html-elements/piano(2)-icono-change-circle.svg"
-              alt="botonI-II"
-            />
-          </a>
-          <ul class="piano">
-            <li class="key white-key" data-key="C"></li>
-            <li class="key black-key" data-key="C#"></li>
-            <li class="key white-key" data-key="D"></li>
-            <li class="key black-key" data-key="D#"></li>
-            <li class="key white-key" data-key="E"></li>
-            <li class="key white-key" data-key="F"></li>
-            <li class="key black-key" data-key="F#"></li>
-            <li class="key white-key" data-key="G"></li>
-            <li class="key black-key" data-key="G#"></li>
-            <li class="key white-key" data-key="A"></li>
-            <li class="key black-key" data-key="A#"></li>
-            <li class="key white-key" data-key="B"></li>
-            <li class="key white-key" data-key="C2"></li>
-            <li class="key black-key" data-key="C#2"></li>
-            <li class="key white-key" data-key="D2"></li>
-            <li class="key black-key" data-key="D#2"></li>
-            <li class="key white-key" data-key="E2"></li>
-          </ul>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="/src/css/styles-pianoII.css">
+	<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+	<title>Proyecto Music Coders</title>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="logo">
+				<a href="/index.html">
+					<img src="/assets/html-elements/logo-music-coders.png" alt="logo-mc">
+				</a>
+				<a href="#">Music Coders</a>
+			</div>
+			<ul>
+				<li><a href="/index.html#containerInstruments">Instrumentos</a></li>
+                <li><a href="/index.html#about">Sobre nosotros</a></li>
+                <li><a href="/index.html#containerTeam">Miembros del equipo</a></li>
+			</ul>
+			<a href="/pages/contact-team.html#formul"><button>Contáctanos</button></a>
+            <button id="menuButton" onclick="openMenu()">
+                <i class='bx bx-menu'></i>
+            </button>
+		</nav>
+	</header>
+	<main>
+		<div class="teclado">
+			<section class="wrapper">
+				<div class="volume-slider">
+					<img class="IconoVol" src="/assets/html-elements/piano(2)-icono-volume-up.svg" alt="vol" />
+					<input class="vs" id="volumeSlider" type="range" min="0" max="1" value="0.5" step="any" />
+				</div>
+				<a href="piano.html">
+					<img class="boton-piano" src="/assets/html-elements/piano(2)-icono-change-circle.svg"
+						alt="botonI-II" />
+				</a>
+				<ul class="piano">
+					<li class="key white-key" data-key="C"></li>
+					<li class="key black-key" data-key="C#"></li>
+					<li class="key white-key" data-key="D"></li>
+					<li class="key black-key" data-key="D#"></li>
+					<li class="key white-key" data-key="E"></li>
+					<li class="key white-key" data-key="F"></li>
+					<li class="key black-key" data-key="F#"></li>
+					<li class="key white-key" data-key="G"></li>
+					<li class="key black-key" data-key="G#"></li>
+					<li class="key white-key" data-key="A"></li>
+					<li class="key black-key" data-key="A#"></li>
+					<li class="key white-key" data-key="B"></li>
+					<li class="key white-key" data-key="C2"></li>
+					<li class="key black-key" data-key="C#2"></li>
+					<li class="key white-key" data-key="D2"></li>
+					<li class="key black-key" data-key="D#2"></li>
+					<li class="key white-key" data-key="E2"></li>
+				</ul>
+				<div class="marca">
+					<h2>Music Coders II</h2>
+				</div>
+			</section>
+		</div>
+	</main>
+	<footer>
+		<div class="top">
+			<div class="logo">
+				<img src="/assets/html-elements/logo-music-coders.png" alt="logo-mc" />
+				<a href="#">Music Coders</a>
+			</div>
+			<ul>
+				<li><a href="/index.html">Inicio</a></li>
+                <li><a href="/index.html#containerInstruments">Instrumentos</a></li>
+                <li><a href="/index.html#about">Sobre nosotros</a></li>
+			</ul>
+			<div class="social-link">
+				<a href="https://github.com/Omarlsant/project-music-coders" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://discord.com/channels/1037154655752421406/1037154656503210066" target="_blank"><i class='bx bxl-discord-alt'></i></a>
+			</div>
+		</div>
+		<div class="separator"></div>
+		<div class="bottom">
+			<p>Hecho con ❤️ por el Team D-O-M | todos los derechos reservados</p>
+			<div class="links">
+				<a href="#">Políticas de privacidad</a>
+				<a href="#">Términos de servicio</a>
+				<a href="#">Configuración de cookies</a>
+			</div>
+		</div>
+	</footer>
+	<script src="/src/js/script-pianoII.js"></script>
+</body>
 
-          <div class="marca">
-            <h2>MusicCoder II</h2>
-          </div>
-        </section>
-      </div>
-    </main>
-    <footer>
-      <div class="top">
-        <div class="logo">
-          <img
-            src="/assets/html-elements/logo-music-coders.png"
-            alt="logo-mc"
-          />
-          <a href="#">Music Coders</a>
-        </div>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#containerInstruments">Instruments</a></li>
-          <li><a href="#containerTeam">About us</a></li>
-        </ul>
-        <div class="social-link">
-          <a href="https://github.com/Omarlsant/project-music-coders"
-            ><i class="bx bxl-github" target="_blank"></i
-          ></a>
-          <a
-            href="https://discord.com/channels/1037154655752421406/1037154656503210066"
-            ><i class="bx bxl-discord-alt" target="_blank"></i
-          ></a>
-        </div>
-      </div>
-      <div class="separator"></div>
-      <div class="bottom">
-        <p>Made with ❤️ By Team D-O-M | all rights reserved</p>
-        <div class="links">
-          <a href="#">Privacy Policy</a>
-          <a href="#">Terms of Service</a>
-          <a href="#">Cookies Settings</a>
-        </div>
-      </div>
-    </footer>
-    <script src="/src/js/script-pianoII.js"></script>
-  </body>
 </html>
-git
