@@ -35,16 +35,12 @@ function validar (evento) {
     }
     
     // Validar edad (debe ser un número)
-    if (edad.value.trim().length === 0) {
-        mensajesErrores.push('Edad es un campo obligatorio');
-    } else if (isNaN(edad.value.trim())) {
+    if (isNaN(edad.value.trim())) {
         mensajesErrores.push('La edad debe ser un número');
     }
     
     // Validar teléfono (debe ser un número)
-    if (telefono.value.trim().length === 0) {
-        mensajesErrores.push('Teléfono es un campo obligatorio');
-    } else if (isNaN(telefono.value.trim())) {
+    if (isNaN(telefono.value.trim())) {
         mensajesErrores.push('El teléfono debe ser un número');
     }
 
@@ -55,13 +51,15 @@ function validar (evento) {
 
     // ENVIAR O MOSTRAR MENSAJES
     if (mensajesErrores.length === 0) {
-        // Enviamos el formulario si no hay errores
-        formulario.submit();
+        // Mostrar mensaje de éxito usando SweetAlert2
         Swal.fire({
             title: "Mensaje enviado",
-            text: "Nos ponemos en contacto contigo",
+            text: "Nos pondremos en contacto contigo pronto.",
             icon: "success"
-          });
+        }).then(() => {
+            // Resetear el formulario después de mostrar el mensaje de éxito
+            formulario.reset();
+        });
     } else {
         // Mostrar los errores en una alerta usando SweetAlert2
         Swal.fire({
