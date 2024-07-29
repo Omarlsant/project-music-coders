@@ -1,3 +1,9 @@
+function openMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('open');
+}
+console.log(document);
+
 const formulario = document.querySelector('#formulario');
 const nombre = document.querySelector('#nombre');
 const correo = document.querySelector('#correo');
