@@ -107,44 +107,6 @@ nav button:hover {
 
 /* A partir de aquí es el css del body */
 
-.container-body {
-    width: 200vh;
-    height: 100vh;
-    background-image: url(/assets/piano-in-construction.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-}
-
-.container-body .in-construction-guitar h1, .container-body .in-construction-guitar p, .container-body .in-construction-bass h1, .container-body .in-construction-bass p, .container-body .in-construction-drums h1, .container-body .in-construction-drums p {
-    color: white;
-    padding-left: 50px;
-    margin-top: 20px;
-}
-
-nav .logo, footer .logo {
-    display: flex;
-    align-items: center;
-}
-
-nav .logo a, footer .logo a {
-    margin-left: 8px;
-    font-weight: bold;
-    font-size: 20px;
-}
-
-nav .logo img, footer .logo img {
-    width: 95px;
-    height: 80px;
-}
-
-nav ul, footer .top ul {
-    display: flex;
-    gap: 40px;
-}
-
-
 .container-contacto .contacto img {
     height: 700px;
     width: 100%;
@@ -283,6 +245,10 @@ textarea {
     bottom: 120px;
 }
 
+main .datoscontacto2 {
+  padding-right: 30px;
+}
+
 nav .logo,
 footer .logo {
   display: flex;
@@ -305,18 +271,13 @@ footer .logo img {
 nav ul,
 footer .top ul {
   display: flex;
+  flex-direction: row;
   gap: 40px;
 }
 
 footer {
   background-color: #deebee;
-  padding: 40px 30px 60px 30px;
-  display: flex;
-  flex-direction: column;
-}
-
-main .datoscontacto2 {
-    padding-right: 30px;
+  padding: 50px 80px 60px 80px;
 }
 
 footer .top,
