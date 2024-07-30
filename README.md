@@ -1,6 +1,8 @@
-# Music Coders - Escuela de Música <img src="/assets/html-elements/logo-blanco.png"/> 
+ <img src="/assets/html-elements/logo-blanco.png"/> 
+ 
+# Music Coders - Escuela de Música
 
-## Bienvenido al repositorio del proyecto de la página web de la escuela de música Music Coders. Este proyecto ha sido desarrollado utilizando HTML, CSS y JavaScript.
+## Bienvenido al repositorio del proyecto de la página web de la escuela de música Music Coders.
 
 ## Contenido
 
