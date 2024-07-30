@@ -230,7 +230,12 @@ video {
 }
 
 .container-about .left img {
-  width: 440px;
+  width: 360px;
+  height: 280px;
+  padding-right: 60px;
+  object-fit: fill;
+  object-position: center;
+  border-radius: 30px;
 }
 
 .container-about .right {
