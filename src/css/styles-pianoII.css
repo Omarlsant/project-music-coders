@@ -32,8 +32,6 @@ li {
   display: none;
 }
 
-/* Aquí va lo del header */
-
 nav {
   background-color: #fff;
   position: sticky;
@@ -78,8 +76,63 @@ main {
   padding: 20px 40px;
   border-radius: 20px;
   background: rgb(210, 38, 48);
+  margin-right: 20%;
+  margin-left: 20%;
+}
+/*VOLUME*/
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  background: #d22630;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
 }
 
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  background: #d22630;
+  cursor: pointer;
+  border-radius: 50%;
+  border: 2px solid #ffffff;
+}
+
+/*la barra*/
+input[type="range"]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 12px;
+  background: linear-gradient(to right, #d22630, #ddd);
+  border-radius: 5px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  background: transparent;
+  margin-top: 10px;
+}
+
+.volume-slider {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  opacity: 0.8;
+}
+.IconoVol {
+  margin-top: 7px;
+  padding: 10px;
+}
+
+.marca {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  opacity: 0.8;
+}
 .piano .white-key {
   box-shadow: 5px 5px 10px #fff inset, -5px -5px 10px #b2b2b2 inset;
 }
@@ -185,10 +238,7 @@ footer .bottom .links a {
   font-size: 12px;
   margin-left: 14px;
 }
-
-
-
-/* @media screen and (max-width: 851px) {
+@media screen and (max-width: 1200px) {
   .wrapper {
     padding: 25px;
   }
@@ -217,82 +267,6 @@ footer .bottom .links a {
     height: 100px;
     width: 50px;
   }
-}
-
-@media screen and (max-width: 616px) {
-  .piano .key:nth-child(13),
-  .piano .key:nth-child(14),
-  .piano .key:nth-child(15),
-  .piano .key:nth-child(16),
-  .piano .key:nth-child(17) {
-    display: none;
-  }
-  .piano .white-key {
-    width: 50px;
-  }
-} */
-
-/*VOLUME-------------------------*/
-
-/* Estilo para el thumb */
-input[type="range"]::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 12px;
-  height: 12px;
-  background: #d22630; /* Color del thumb */
-  cursor: pointer;
-  border-radius: 50%;
-  border: 2px solid #ffffff;
-}
-
-input[type="range"]::-moz-range-thumb {
-  width: 20px;
-  height: 20px;
-  background: #d22630; /* Color del thumb */
-  cursor: pointer;
-  border-radius: 50%;
-  border: 2px solid #ffffff; /* Borde blanco para mejor visibilidad */
-}
-
-/* Estilo para el track (la barra) */
-input[type="range"]::-webkit-slider-runnable-track {
-  width: 100%;
-  height: 12px;
-  background: linear-gradient(to right, #d22630, #ddd); /* Color del track */
-  border-radius: 5px;
-}
-
-/* Estilo general para el input range */
-input[type="range"] {
-  -webkit-appearance: none;
-  appearance: none;
-  width: 100%;
-  background: transparent; /* Elimina el fondo por defecto */
-  margin-top: 10px;
-}
-/*VOLUME--------------------------*/
-
-/*Icono de Volume*/
-.volume-slider {
-  display: flex;
-  justify-content: space-between;
-  gap: 10px;
-  opacity: 0.8;
-}
-.IconoVol {
-  margin-top: 7px;
-  padding: 10px;
-}
-
-.marca {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-  opacity: 0.8;
-}
-
-@media screen and (max-width: 1200px) {
   #menuButton {
     display: none;
   }
@@ -302,12 +276,41 @@ input[type="range"] {
     justify-content: center;
   }
 }
+.container-instrument .instrument-items {
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.container-instrument .instrument-items .item {
+  width: 49%;
+}
+
+.container-instrument h3,
+.container-team h3,
+.container-about h3 {
+  font-size: 32px;
+}
+
+.container-about {
+  padding: 85px 80px 0 80px;
+  justify-content: center;
+}
+
+.container-about .left img {
+  width: 300px;
+}
+
+.container-about .right p {
+  font-size: 14px;
+}
+
+.container-team .team-items img {
+  width: 140px;
+  height: 140px;
+}
 
 @media screen and (max-width: 992px) {
-  #menuButton {
-    display: none;
-  }
-  
   .wrapper {
     padding: 25px;
   }
@@ -334,6 +337,76 @@ input[type="range"] {
     width: 50px;
   }
 }
+nav button {
+  display: none;
+}
+
+nav ul {
+  gap: 20px;
+}
+
+nav ul li a {
+  font-size: 15px;
+}
+
+.container-instrument h3,
+.container-team h3,
+.container-about h3 {
+  font-size: 26px;
+}
+
+.container-video .description {
+  display: none;
+}
+
+.container-instrument {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-instrument .instrument-items {
+  justify-content: center;
+}
+
+.container-instrument .instrument-items .item h4 {
+  font-size: 28px;
+}
+
+.container-about {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-team .team-items {
+  gap: 22px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.container-team .team-items .item {
+  width: 48%;
+}
+
+.container-team .team-items img {
+  width: 140px;
+  height: 140px;
+}
+
+footer .top ul {
+  display: none;
+}
+
+.in-construction img {
+  width: 30em;
+}
+
+.in-construction h1 {
+  font-size: 1em;
+}
+
+.in-construction p {
+  font-size: 0.8em;
+}
 
 @media screen and (max-width: 768px) {
   .piano .key:nth-child(13),
@@ -347,7 +420,90 @@ input[type="range"] {
     padding: 80px 75px 80px 75px;
     width: 100%;
   }
+  nav {
+    justify-content: space-between;
+    padding: 0 42px;
+  }
+
+  nav ul {
+    display: none;
+  }
+
+  nav.open .logo {
+    display: none;
+  }
+
+  nav.open ul {
+    display: flex;
+  }
+
+  nav button#menuButton {
+    display: flex;
+  }
+
+  .container-video .description {
+    display: none;
+  }
+
+  .container-instrument h3,
+  .container-team h3,
+  .container-about h3 {
+    font-size: 24px;
+  }
+
+  .container-instrument .instrument-items .item h4 {
+    font-size: 26px;
+  }
+
+  .container-about {
+    padding: 60px 85px 0 85px;
+  }
+
+  .in-construction img {
+    width: 25em;
+  }
 }
 
 @media screen and (max-width: 576px) {
+  .container-video .description {
+    display: none;
+  }
+
+  .container-instrument .instrument-items .item h4 {
+    font-size: 24px;
+  }
+
+  .container-about {
+    padding: 60px 85px 0 85px;
+  }
+
+  .container-about .about {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-team {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  .container-team {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container-team .team-items .item {
+    transition: transform 0.3s;
+  }
+
+  .container-team .team-items .item:hover {
+    transform: scale(1.1);
+  }
+
+  .container-team .team-items .item img {
+    width: 80px;
+    height: 80px;
+  }
 }
