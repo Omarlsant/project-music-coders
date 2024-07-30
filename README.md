@@ -1,5 +1,5 @@
  <img src="/assets/html-elements/logo-blanco.png"/> 
- 
+
 # Music Coders - Escuela de Música
 
 ## Bienvenido al repositorio del proyecto de la página web de la escuela de música Music Coders.
@@ -8,23 +8,14 @@
 
 -Descripción.
 
--Características.
-
 -Instalación.
 
 -Uso.
 
-
 ### Descripción
 Music Coders es una escuela de música dedicada a ofrecer una educación musical de alta calidad para todas las edades y niveles. 
 
-Nuestra página web proporciona información sobre nuestros cursos, profesores y tienes la posibilidad de tocar 4 instrumentos diferentes. 
-
-### Características
-Información detallada sobre los cursos disponibles.
-
-Perfiles de los profesores.
-
+Nuestra página web proporciona información sobre el equipo desarrollador y te ofrece la posibilidad de tocar el piano, tanto clasico como una version electronica que hemos desarrollado, estamos en proceso de construccion de otros 3 instrumentos que en un futuro proximo implementaremos.
 
 ### Instalación
 Para ejecutar este proyecto localmente, sigue estos pasos:
