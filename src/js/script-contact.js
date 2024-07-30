@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 function openMenu() {
     const nav = document.querySelector('nav');
     nav.classList.toggle('open');
@@ -6,8 +5,6 @@ function openMenu() {
 
 console.log(document);
 
-=======
->>>>>>> 67f0b646cc7acd4c0c88782906440fc50bb0b685
 const formulario = document.querySelector('#formulario');
 const nombre = document.querySelector('#nombre');
 const correo = document.querySelector('#correo');
