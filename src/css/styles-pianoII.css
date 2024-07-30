@@ -176,7 +176,32 @@ input[type="range"] {
   cursor: url("/assets/html-elements/piano (2)-icono-cursor-piano.png"), auto;
   width: 7%;
 }
+.leyenda {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10%;
+}
 
+.ratonLeyenda {
+  display: flex;
+  justify-content: center;
+  text-align: justify;
+}
+
+.tecladoLeyenda {
+  display: flex;
+  justify-content: center;
+}
+
+.tecladoLeyendaLetras {
+  margin-top: 15px;
+  margin-left: 20px;
+}
+
+.ratonLeyendaParrafo {
+  margin-top: 4px;
+  margin-left: 20px;
+}
 nav .logo,
 footer .logo {
   display: flex;
