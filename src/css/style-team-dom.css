@@ -4,15 +4,12 @@ html {
   scroll-behavior: smooth;
 }
 
-main {
+body {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-
-body {
-    box-sizing: border-box;
-    font-family: "Oxygen", sans-serif;
-  }
 
 a {
   text-decoration: none;
