@@ -72,14 +72,57 @@ main {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 85px 80px 85px 80px;
+    padding: 40px 60px 40px 60px;
 }
 
-main p {
-    padding-top: 10px;
-    padding-bottom: 20px;
-
+.container-team {
+  padding: 0px 10px 0px 10px;
 }
+
+.container-team .team-items {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-team .team-items img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  padding-bottom: 10px;
+  object-fit: cover;
+}
+
+.container-team .team-items .item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  background-color: #fff;
+  border-radius: 10px;
+  border-bottom: 4px solid transparent;
+  cursor: pointer;
+  box-shadow: 0 5px 32px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  padding: 40px;
+}
+
+.container-team .team-items .item .info {
+}
+
+.container-team .team-items .info a i {
+  margin-left: 2px;
+  font-size: 18px;
+  font-size: 34px;
+  padding: 10px 0 0 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
 
 nav .logo,
 footer .logo {
