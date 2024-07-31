@@ -10,6 +10,7 @@
     />
     <title>Proyecto Music Coders</title>
   </head>
+
   <body>
     <header>
       <nav>
@@ -38,6 +39,16 @@
     <main>
       <div class="teclado">
         <section class="wrapper">
+          <div class="cambioDePiano">
+            <a href="piano.html">
+              <img
+                class="boton-piano"
+                src="/assets/html-elements/piano(2)-icono-change-circle.svg"
+                alt="Botón para cambiar entre pianos"
+              />
+            </a>
+            <h3>Classical Piano</h3>
+          </div>
           <div class="volume-slider">
             <img
               class="IconoVol"
@@ -54,13 +65,6 @@
               step="any"
             />
           </div>
-          <a href="piano.html">
-            <img
-              class="boton-piano"
-              src="/assets/html-elements/piano(2)-icono-change-circle.svg"
-              alt="Botón para cambiar entre pianos"
-            />
-          </a>
           <ul class="piano">
             <li class="key white-key" data-key="C"></li>
             <li class="key black-key" data-key="C#"></li>
@@ -92,7 +96,7 @@
             alt="Icono de mouse"
           />
           <p class="ratonLeyendaParrafo">
-            Desliza el mouse sobre las teclas para escuchar las notas, ajusta el
+            Haz click sobre las teclas para escuchar las notas, ajusta el
             volumen, cambia entre piano eléctrico y clásico con el switch.
           </p>
         </div>

@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 
 html {
   scroll-behavior: smooth;
@@ -69,7 +69,8 @@ nav .logo a button .bx {
 }
 
 main {
-  padding: 85px 80px 85px 80px;
+  height: 600px;
+  padding: 30px 10px 40px 10px;
 }
 
 .wrapper {
@@ -120,18 +121,38 @@ input[type="range"] {
   display: flex;
   justify-content: space-between;
   gap: 10px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 .IconoVol {
   margin-top: 7px;
   padding: 10px;
 }
 
+.cambioDePiano {
+  padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.cambioDePiano img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.cambioDePiano h3 {
+  margin: 9px 0 0 10px;
+  color: #deebee;
+  opacity: 0.8;
+}
+
 .marca {
   display: flex;
   justify-content: center;
   margin-top: 10px;
-  opacity: 0.8;
+  color: white;
 }
 .piano .white-key {
   box-shadow: 5px 5px 10px #fff inset, -5px -5px 10px #b2b2b2 inset;
@@ -179,7 +200,7 @@ input[type="range"] {
 .leyenda {
   display: flex;
   flex-direction: column;
-  margin-top: 10%;
+  margin-top: 40px;
 }
 
 .ratonLeyenda {
