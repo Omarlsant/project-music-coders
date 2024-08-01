@@ -520,6 +520,19 @@ footer .top ul {
 }
 
 @media screen and (max-width: 576px) {
+
+  nav {
+    padding-left: 0;
+  }
+  nav ul {
+    padding-left: 30px;
+  }
+
+  nav ul li a {
+    font-weight: 600;
+    font-size: 12px;
+  }
+  
   .container-video .description {
     display: none;
   }
@@ -544,6 +557,17 @@ footer .top ul {
 }
 
 @media screen and (max-width: 391px) {
+  nav {
+    padding-left: 0;
+  }
+  nav ul {
+    padding-left: 30px;
+  }
+
+  nav ul li a {
+    font-weight: 600;
+    font-size: 12px;
+  }
   .container-team {
     display: flex;
     flex-direction: column;
