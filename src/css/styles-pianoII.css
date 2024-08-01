@@ -190,6 +190,11 @@ input[type="range"] {
   border: 1px solid #000;
   background: whitesmoke;
 }
+
+.teclado .wrapper ul {
+  padding-left: 60px;
+}
+
 .boton-piano {
   opacity: 0.8;
   cursor: url("/assets/html-elements/piano (2)-icono-cursor-piano.png"), auto;
@@ -283,6 +288,10 @@ footer .bottom .links a {
   margin-left: 14px;
 }
 @media screen and (max-width: 1200px) {
+  main {
+    height: 480px;
+    padding: 50px 10px 60px 10px;
+  }
   .wrapper {
     padding: 25px;
   }
@@ -318,6 +327,10 @@ footer .bottom .links a {
   .teclado {
     display: flex;
     justify-content: center;
+  }
+
+  .teclado .wrapper ul {
+    padding-left: 0px;
   }
 }
 .container-instrument .instrument-items {
