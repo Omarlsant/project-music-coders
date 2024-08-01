@@ -457,9 +457,13 @@ footer .bottom .links a {
     justify-content: space-between;
     padding-left: 0;
   }
-  
+
   nav ul {
     padding-left: 30px;
+  }
+
+  header nav {
+    padding: 0;
   }
 
   nav ul li a {
@@ -490,9 +494,10 @@ footer .bottom .links a {
     padding: 0;
   }
 
-  nav {
-    padding: 0 10px 0 0;
+  header nav {
+    margin-right: 10px;
   }
+
   nav ul {
     padding-left: 20px;
   }
