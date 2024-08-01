@@ -292,6 +292,12 @@ footer .bottom .links a {
   margin-left: 14px;
 }
 
+@media screen and (max-width: 1600px) {
+  .teclado .wrapper .piano {
+    padding-left: 30px;
+  }
+}
+
 @media screen and (max-width: 1400px) {
   .teclado .wrapper .piano {
     padding-left: 0;
