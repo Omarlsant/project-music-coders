@@ -49,6 +49,7 @@ nav button {
   border: #1c1e53;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 16px;
 }
 
 nav button:hover {
@@ -58,7 +59,7 @@ nav button:hover {
 }
 
 nav a {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 nav .logo a button .bx {
@@ -67,7 +68,7 @@ nav .logo a button .bx {
 
 main {
   height: 600px;
-  padding: 30px 10px 40px 10px;
+  padding: 50px 10px 60px 10px;
 }
 
 .wrapper {
