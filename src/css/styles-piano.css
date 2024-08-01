@@ -47,6 +47,7 @@ nav button {
   border: #1c1e53;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 16px;
 }
 
 nav button:hover {
@@ -56,7 +57,11 @@ nav button:hover {
 }
 
 nav a {
-  font-size: 13px;
+  font-size: 16px;
+}
+
+nav .logo a button .bx {
+  display: none;
 }
 
 #menuButton {
@@ -71,6 +76,7 @@ main {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
+  padding-top: 50px;
 }
 
 .piano-box {
@@ -251,7 +257,7 @@ main {
 }
 
 .instructions {
-  margin: 6em 3em 0 3em;
+  margin: 3em;
 }
 
 .instructions p {
@@ -449,7 +455,20 @@ footer .bottom .links a {
 @media screen and (max-width: 768px) {
   nav {
     justify-content: space-between;
-    padding: 0 42px;
+    padding-left: 0;
+  }
+
+  nav ul {
+    padding-left: 30px;
+  }
+
+  header nav {
+    padding: 0;
+  }
+
+  nav ul li a {
+    font-weight: 600;
+    font-size: 12px;
   }
 
   nav ul {
@@ -466,5 +485,33 @@ footer .bottom .links a {
 
   nav button#menuButton {
     display: flex;
+  }
+}
+
+@media screen and (max-width: 391px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  header nav {
+    margin-right: 10px;
+  }
+
+  nav ul {
+    padding-left: 20px;
+  }
+
+  nav ul li a {
+    font-weight: 600;
+    font-size: 10px;
+  }
+
+  nav button, nav a, footer {
+    font-size: 11px;
+  }
+
+  footer {
+    padding: 30px 30px 40px 30px;
   }
 }

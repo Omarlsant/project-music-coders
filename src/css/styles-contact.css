@@ -47,6 +47,7 @@ nav button {
   border: #1c1e53;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-size: 16px;
 }
 
 nav button:hover {
@@ -56,7 +57,7 @@ nav button:hover {
 }
 
 nav a {
-  font-size: 13px;
+  font-size: 16px;
 }
 
 nav .logo a button .bx {
@@ -108,7 +109,7 @@ nav button:hover {
 
 .titulo{
     position: absolute;
-    top: 60%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 150px; 
@@ -234,7 +235,7 @@ textarea {
     text-align: center;
     height: 100px;
     font-size: 22px;
-    left: 740px;
+    left: 1150px;
     bottom: 120px;
 }
 
@@ -304,6 +305,13 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 1200px) {
+  .datoscontacto2{
+    display:none;
+  }
+  html, body {
+    width: 100%!important;
+    overflow-x: hidden!important;
+    }
 
 }
   
@@ -322,6 +330,9 @@ footer .bottom .links a {
    
     footer .top ul {
         display: none;
+      }
+      .datoscontacto2{
+        display:none;
       }
   }
   
@@ -345,6 +356,9 @@ footer .bottom .links a {
   
     nav button#menuButton {
       display: flex;
+    }
+    .datoscontacto2{
+      display:none;
     }
   }
   
