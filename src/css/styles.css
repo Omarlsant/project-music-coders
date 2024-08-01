@@ -609,6 +609,10 @@ footer .bottom .links a {
     display: flex;
   }
 
+  .text-video {
+    top: 70%;
+  }
+
   .text-video h1 {
     font-size: 3rem;
   }
@@ -660,6 +664,10 @@ footer .bottom .links a {
 
   .text-video h1 {
     font-size: 2rem;
+  }
+
+  .text-video {
+    top: 70%;
   }
 
   .text-video span {
@@ -744,6 +752,10 @@ footer .bottom .links a {
   .container-team {
     display: flex;
     flex-direction: column;
+  }
+
+  .text-video {
+    top: 70%;
   }
 
   .container-team .team-items {
