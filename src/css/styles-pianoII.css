@@ -146,6 +146,10 @@ input[type="range"] {
   opacity: 0.8;
 }
 
+.teclado .wrapper .piano {
+  padding-left: 55px;
+}
+
 .marca {
   display: flex;
   justify-content: center;
@@ -289,7 +293,7 @@ footer .bottom .links a {
 }
 @media screen and (max-width: 1200px) {
   main {
-    height: 480px;
+    height: 500px;
     padding: 50px 10px 60px 10px;
   }
   .wrapper {
@@ -304,6 +308,11 @@ footer .bottom .links a {
   .volume-slider .input {
     max-width: 100px;
   }
+
+  .teclado .wrapper .piano {
+    padding-left: 0;
+  }
+
   .piano {
     margin-top: 20px;
   }
@@ -333,46 +342,22 @@ footer .bottom .links a {
     padding-left: 0px;
   }
 }
-.container-instrument .instrument-items {
-  gap: 10px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
 
-.container-instrument .instrument-items .item {
-  width: 49%;
-}
-
-.container-instrument h3,
-.container-team h3,
-.container-about h3 {
-  font-size: 32px;
-}
-
-.container-about {
-  padding: 85px 80px 0 80px;
-  justify-content: center;
-}
-
-.container-about .left img {
-  width: 300px;
-}
-
-.container-about .right p {
-  font-size: 14px;
-}
-
-.container-team .team-items img {
-  width: 140px;
-  height: 140px;
-}
 
 @media screen and (max-width: 992px) {
+  main {
+    height: 500px;
+    padding: 50px 10px 50px 10px;
+  }
   .wrapper {
     padding: 25px;
   }
   .encabezado {
     flex-direction: column;
+  }
+
+  .teclado .wrapper .piano {
+    padding-left: 0;
   }
   .encabeza :where(h2, .column) {
     margin-bottom: 13px;
