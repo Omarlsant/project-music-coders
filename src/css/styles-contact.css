@@ -235,7 +235,7 @@ textarea {
     text-align: center;
     height: 100px;
     font-size: 22px;
-    left: 740px;
+    left: 1150px;
     bottom: 120px;
 }
 
@@ -305,6 +305,13 @@ footer .bottom .links a {
 }
 
 @media screen and (max-width: 1200px) {
+  .datoscontacto2{
+    display:none;
+  }
+  html, body {
+    width: 100%!important;
+    overflow-x: hidden!important;
+    }
 
 }
   
@@ -323,6 +330,9 @@ footer .bottom .links a {
    
     footer .top ul {
         display: none;
+      }
+      .datoscontacto2{
+        display:none;
       }
   }
   
@@ -346,6 +356,9 @@ footer .bottom .links a {
   
     nav button#menuButton {
       display: flex;
+    }
+    .datoscontacto2{
+      display:none;
     }
   }
   
